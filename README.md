@@ -40,10 +40,11 @@ human_followerは2DｰLiDARと深層学習を用いた人追従機能を提供�
 <br>また、前述したPIDの各ゲインや目標座標、safety_dist等の各値は[follower.launch](launch/follower.launch)からROSパラメータとして設定できます。
 
 ## Demo
-直線経路・曲線経路・雑多な経路における人追従と緊急停止のデモ動画です。
+<details>
+<summary>直線経路・曲線経路・雑多な経路における人追従と緊急停止のデモ動画です</summary>
 
 https://user-images.githubusercontent.com/45844173/220177958-479912c3-afe2-4eed-853c-c494167492e4.mp4
-
+</details>
 
 
 ## Requirement
