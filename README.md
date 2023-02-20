@@ -37,7 +37,7 @@ human_followerは2DｰLiDARと深層学習を用いた人追従機能を提供�
 
 ### 追従の制御
 追従制御は[follower_controlノード](scripts/follower_control.py)が実現しており、人の重心座標と目標座標の差を収束させるように、並進速度と角速度それぞれに対してPID制御を行います。重心座標は両脚検出器から出力されるBoundingBoxの交点、目標座標はロボットの正面0.5[m]としています。[follower_controlノード](scripts/follower_control.py)には、ロボット前方180[°]のsafety_dist[m]以下に障害物が侵入した際、緊急停止する処理も含まれています。
-<br>また、前述したPIDの各ゲインや目標座標、safety_dist等の各値はfollower.launchからROSパラメータとして設定できます。
+<br>また、前述したPIDの各ゲインや目標座標、safety_dist等の各値は[follower.launch](launch/follower.launch)からROSパラメータとして設定できます。
 
 ## Demo
 直線経路・曲線経路・雑多な経路における人追従と緊急停止のデモ動画です。
