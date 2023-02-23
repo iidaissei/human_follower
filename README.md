@@ -46,7 +46,7 @@ https://user-images.githubusercontent.com/45844173/220177958-479912c3-afe2-4eed-
 | Ubuntu | 20.04 |
 | ROS | noetic |
 
-本パッケージでは、[math-robotics](https://github.com/mats-robotics)氏の[yolov5_ros](https://github.com/mats-robotics/yolov5_ros)というYOLOv5のROSラッパーを利用しています。
+本パッケージでは、[mats-robotics](https://github.com/mats-robotics)氏の[yolov5_ros](https://github.com/mats-robotics/yolov5_ros)というYOLOv5のROSラッパーを利用ています。インストールは[mats-robottics/yolov5_ros](https://github.com/mats-robotics/yolov5_ros/blob/main/launch/yolov5.launch)を参考にしてください。
 
 
 ## Usage
