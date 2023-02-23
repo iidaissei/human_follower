@@ -46,13 +46,15 @@ https://user-images.githubusercontent.com/45844173/220177958-479912c3-afe2-4eed-
 | Ubuntu | 20.04 |
 | ROS | noetic |
 
-本パッケージでは、[mats-robotics](https://github.com/mats-robotics)氏の[yolov5_ros](https://github.com/mats-robotics/yolov5_ros)というYOLOv5のROSラッパーを利用ています。インストールは[mats-robottics/yolov5_ros](https://github.com/mats-robotics/yolov5_ros/blob/main/launch/yolov5.launch)を参考にしてください。
+本パッケージでは、[mats-robotics](https://github.com/mats-robotics)氏の[yolov5_ros](https://github.com/mats-robotics/yolov5_ros)というYOLOv5のROSラッパーを利用しています。インストールは[mats-robottics/yolov5_ros](https://github.com/mats-robotics/yolov5_ros/blob/main/launch/yolov5.launch)を参考にしてください。
 
 
 ## Usage
 
 ### 人追従
-本パッケージを実行する前に、2DｰLiDARを起動してください。尚、2DｰLiDARから配信される測距データはLaserScan型である必要があります。
+本パッケージを実行する前に、2DｰLiDARを起動してください。
+<br>※2DｰLiDARから配信される測距データはLaserScan型である必要があります。
+
 2DｰLiDARを起動したらfollower.launchを起動してください。
 
 ~~~
