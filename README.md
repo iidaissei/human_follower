@@ -52,7 +52,8 @@ https://user-images.githubusercontent.com/45844173/220177958-479912c3-afe2-4eed-
 ## Usage
 
 ### 人追従
-最初にfollower.launchを起動します。
+人追従機能を実行する前に、2DｰLiDARを起動してください。尚、2DｰLiDARから配信される測距データはLaserScan型である必要があります。
+2DｰLiDARを起動したらfollower.launchを起動してください。
 
 ~~~
 roslaunch human_follower follower.launch
