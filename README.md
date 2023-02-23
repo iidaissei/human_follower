@@ -6,13 +6,6 @@ human_followerは2DｰLiDARと深層学習を用いた人追従機能を提供�
 - ロボットの前方に侵入してきた障害物に対する緊急停止
 - 人の重心座標や目標座標等の可視化
 
-### 動作確認環境
-
-| 環境 | バージョン |
-| --- | --- |
-| Ubuntu | 20.04 |
-| ROS | noetic |
-
 ## Description
 本機能は以下の前提条件のもとに実現されます。
 
@@ -48,9 +41,25 @@ https://user-images.githubusercontent.com/45844173/220177958-479912c3-afe2-4eed-
 
 ## Requirement
 
+| 環境 | バージョン |
+| --- | --- |
+| Ubuntu | 20.04 |
+| ROS | noetic |
+
+本パッケージでは、[math-robotics](https://github.com/mats-robotics)氏の[yolov5_ros](https://github.com/mats-robotics/yolov5_ros)というYOLOv5のROSラッパーを利用しています。
+
 
 ## Usage
 
+### 人追従
+最初にfollower.launchを起動します。
+'''
+roslaunch human_follower follower.launch
+'''
+次にyolov5.launchを起動します。
+'''
+roslaunch yolov5_ros yolov5.launch
+'''
 
 ## Author
 飯田一成（金沢工業大学 工学部 ロボティクス学科 出村研究室）
